@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: Scrolling
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"In","label":null,"summary":null,"hideLabel":true}],"controlOutputDefinitions":[],"valueInputDefinitions":[{"hasDefaultValue":false,"defaultValue":{"$content":0.0,"$type":"System.Single"},"_type":"System.Single","key":"Speed","label":null,"summary":null,"hideLabel":false}],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":101.0,"y":37.9388},"zoom":0.8896396,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":-144.0},"guid":"da8484e4-79f3-4167-819e-e45818c0f233","$version":"A","$type":"Bolt.Start"},{"chainable":false,"member":{"name":"Translate","parameterTypes":["System.Single","System.Single","System.Single"],"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null,"%x":{"$content":0.0,"$type":"System.Single"},"%y":{"$content":0.0,"$type":"System.Single"},"%z":{"$content":0.0,"$type":"System.Single"}},"position":{"x":270.0,"y":38.0},"guid":"7fdc5968-fe99-4be1-9967-d38103b494fa","$version":"A","$type":"Bolt.InvokeMember","$id":"13"},{"member":{"name":"deltaTime","parameterTypes":null,"targetType":"UnityEngine.Time","targetTypeName":"UnityEngine.Time","$version":"A"},"defaultValues":{},"position":{"x":-198.0,"y":172.0},"guid":"e62b0223-3fb4-4588-9ecb-896fcef84129","$version":"A","$type":"Bolt.GetMember","$id":"16"},{"defaultValues":{"b":{"$content":-5.0,"$type":"System.Single"}},"position":{"x":46.0,"y":151.0},"guid":"e7694fc2-7cc1-43fa-8a8c-2807a24c0cdb","$version":"A","$type":"Bolt.ScalarMultiply","$id":"19"},{"defaultValues":{},"position":{"x":-194.0,"y":38.0},"guid":"d3fbc724-1c4c-4ee4-96fd-c8af62118022","$version":"A","$type":"Bolt.GraphInput","$id":"21"},{"sourceUnit":{"$ref":"21"},"sourceKey":"In","destinationUnit":{"$ref":"13"},"destinationKey":"enter","guid":"5615e3bb-783d-4a7d-b0ae-6f3f51b3a34a","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"product","destinationUnit":{"$ref":"13"},"destinationKey":"%x","guid":"1e29dd53-27a1-49b2-b2e3-69716519eece","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"value","destinationUnit":{"$ref":"19"},"destinationKey":"b","guid":"7c10bc86-eb7e-418c-b8d1-be7289cfd170","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"21"},"sourceKey":"Speed","destinationUnit":{"$ref":"19"},"destinationKey":"a","guid":"2110c176-3482-444b-ae3b-5277c4d8824c","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
